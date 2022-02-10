@@ -1,0 +1,85 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+  }
+ main {
+    display: flex;
+    justify-content: center;
+    background:rgb(33, 33, 56);
+    min-height: 100vh;
+    align-items: center;
+  }
+  .box, .redbox{
+    min-width: 350px;
+    min-height: 350px;
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    position: relative;
+  }
+  .title{
+      width: 100%;
+      padding-left: 10px;
+      font-size: 0.8rem;
+      margin: 20px 0;
+      letter-spacing: 2px;
+      font-weight: 400;
+      border-left: 5px solid palevioletred;
+  }
+  .input_fild{
+      width: 100%;
+      position: relative;
+  }
+  .input_fild .input{
+    width: 100%;
+      position: relative;
+      margin: 40px 0;
+  }
+  .input_fild .input  .inputfild{
+      background-color: white;
+  }
+.redbox{
+  background-color: red;
+}
+  .input_fild .input input{
+    width: 100%;
+      position: relative;
+      padding : 15px ;
+      font-size: 1rem;
+      border-radius: 5px;
+      outline: none;
+      border: 0.5px solid rgba(0, 0, 0, 0.294);
+      background: transparent;
+z-index: 11;
+color: rgba(0, 0, 0, 0.472);
+  }
+  .input_fild .input .c{
+    background-color: transparent;
+}
+   span{
+      position: absolute;
+      font-weight: 400;
+      top: 14px;
+      left: 15px;
+      color: rgba(0, 0, 0, 0.472);
+      transition: 0.2s;
+      z-index: 1;
+   
+  }
+ .input input:focus ~ span{
+    transform: translateY(-40px) translateX(-10px);
+    
+  }
+  
+button{
+   color: white;
+   border: none;
+  background-color: rgb(51, 188, 243);
+  padding: 10px 15px;
+  letter-spacing: 3px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
