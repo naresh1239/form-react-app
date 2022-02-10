@@ -1,6 +1,6 @@
 import React,{useEffect,useState} from 'react'
 import { NavLink } from 'react-router-dom'
-import img from "./project3-min.png"
+
 import "./List.css"
 const List = () => {
   const [newdata, setnewdata] = useState([])
@@ -34,11 +34,9 @@ const List = () => {
              <>
     
       <div class="list">
-        <div class="img">
-          <img src={img} alt="s" />
-        </div>
+    
         <div class="contant">
-            <h4>{ele?.email.slice(0,17)}</h4>
+            <h4>{ele?.email}</h4>
             <h5>{ele?.name}</h5>
         </div>
         <div class="icon">

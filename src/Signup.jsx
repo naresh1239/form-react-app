@@ -46,6 +46,7 @@ const alldata = () => {
  setinputemail("")
  setpassword("")
  setname("")
+ return navigate("/")
 }
  // storing data to localtorage
  
