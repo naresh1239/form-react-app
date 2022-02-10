@@ -27,7 +27,7 @@ const alldata = () => {
  }
  if (!inputemail =="" && inputemail.endsWith("@gmail.com") ) {
      localtextarry.push(obj);
-     return navigate("/")
+  
  } else {
   toast.error('email not correct 😒!', {
     position: "top-right",
