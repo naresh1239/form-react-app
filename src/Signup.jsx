@@ -25,9 +25,9 @@ const alldata = () => {
  } else {
      localtextarry = JSON.parse(localdata);
  }
- if (!inputemail =="" && inputemail.endsWith("@gmail.com") ) {
+ if (inputemail.endsWith("@gmail.com") ) {
      localtextarry.push(obj);
-  
+     
  } else {
   toast.error('email not correct 😒!', {
     position: "top-right",
@@ -46,7 +46,7 @@ const alldata = () => {
  setinputemail("")
  setpassword("")
  setname("")
- return navigate("/")
+
 }
  // storing data to localtorage
  
