@@ -27,7 +27,7 @@ const alldata = () => {
  }
  if (inputemail.endsWith("@gmail.com") ) {
      localtextarry.push(obj);
-     
+     redrect()
  } else {
   toast.error('email not correct 😒!', {
     position: "top-right",
@@ -49,7 +49,11 @@ const alldata = () => {
 
 }
  // storing data to localtorage
- 
+ const redrect = () =>{
+   setTimeout(() => {
+    return navigate("/")
+   },500);
+ }
   return (
     <>
 
